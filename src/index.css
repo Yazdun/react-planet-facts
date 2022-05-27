@@ -7,7 +7,13 @@
   --clr-dark-1: #070724;
   --clr-dark-2: #38384f;
 
-  --bs-1: var(--clr-light-1) 0px 0px 0px 1px;
+  --p1: 1rem;
+  --p2: 2rem;
+  --p3: 3rem;
+  --p4: 4rem;
+  --p5: 5rem;
+
+  --bs-1: rgb(149, 137, 255) 0px 0px 0px 2px;
 
   --ff-serif-1: 'Antonio', sans-serif;
   --ff-serif-2: 'League Spartan', sans-serif;
@@ -32,6 +38,7 @@ body {
 a {
   text-decoration-skip-ink: auto;
   text-decoration: none;
+  outline: none;
   color: var(--clr-white-1);
 }
 
@@ -48,6 +55,10 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* make form elements easier to work with */
 input,
 button,
@@ -60,7 +71,7 @@ select {
 /* focus visible */
 button:focus-visible,
 a:focus-visible {
-  box-shadow: white 0px 0px 0px 2px !important;
+  box-shadow: var(--bs-1) !important;
 }
 
 /* only for screen readers */

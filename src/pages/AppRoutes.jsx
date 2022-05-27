@@ -10,6 +10,7 @@ export const AppRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Planet />} />
+          <Route path="/:id" element={<Planet />} />
         </Route>
       </Routes>
     </AnimatePresence>

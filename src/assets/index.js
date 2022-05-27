@@ -1,39 +1,39 @@
 // EARTH ASSETS
-export { PlanetEarth } from './planet-earth'
-export { PlanetEarthInernal } from './planet-earth-internal'
-export { GeologyEarth } from './geology-earth'
+export { default as PlanetEarth } from './planet-earth.svg'
+export { default as PlanetEarthInernal } from './planet-earth-internal.svg'
+export { default as GeologyEarth } from './geology-earth.png'
 
 // JUPITER ASSETS
-export { PlanetJupiter } from './planet-jupiter'
-export { PlanetJupiterInernal } from './planet-jupiter-internal'
-export { GeologyJupiter } from './geology-jupiter'
+export { default as PlanetJupiter } from './planet-jupiter.svg'
+export { default as PlanetJupiterInernal } from './planet-jupiter-internal.svg'
+export { default as GeologyJupiter } from './geology-jupiter.png'
 
 // MARS ASSETS
-export { PlanetMars } from './planet-mars'
-export { PlanetMarsInernal } from './planet-mars-internal'
-export { GeologyMars } from './geology-mars'
+export { default as PlanetMars } from './planet-mars.svg'
+export { default as PlanetMarsInernal } from './planet-mars-internal.svg'
+export { default as GeologyMars } from './geology-mars.png'
 
 // MERCURY ASSETS
-export { PlanetMercury } from './planet-mercury'
-export { PlanetMercuryInernal } from './planet-mercury-internal'
-export { GeologyMercury } from './geology-mercury'
+export { default as PlanetMercury } from './planet-mercury.svg'
+export { default as PlanetMercuryInernal } from './planet-mercury-internal.svg'
+export { default as GeologyMercury } from './geology-mercury.png'
 
 // NEPTUNE ASSETS
-export { PlanetNeptune } from './planet-neptune'
-export { PlanetNeptuneInernal } from './planet-neptune-internal'
-export { GeologyNeptune } from './geology-neptune'
+export { default as PlanetNeptune } from './planet-neptune.svg'
+export { default as PlanetNeptuneInernal } from './planet-neptune-internal.svg'
+export { default as GeologyNeptune } from './geology-neptune.png'
 
 // SATURN ASSETS
-export { PlanetSaturn } from './planet-saturn'
-export { PlanetSaturnInernal } from './planet-saturn-internal'
-export { GeologySaturn } from './geology-saturn'
+export { default as PlanetSaturn } from './planet-saturn.svg'
+export { default as PlanetSaturnInernal } from './planet-saturn-internal.svg'
+export { default as GeologySaturn } from './geology-saturn.png'
 
 // URANUS ASSETS
-export { PlanetUranus } from './planet-uranus'
-export { PlanetUranusInernal } from './planet-uranus-internal'
-export { GeologyUranus } from './geology-uranus'
+export { default as PlanetUranus } from './planet-uranus.svg'
+export { default as PlanetUranusInernal } from './planet-uranus-internal.svg'
+export { default as GeologyUranus } from './geology-uranus.png'
 
 // VENUS ASSETS
-export { PlanetVenus } from './planet-venus'
-export { PlanetVenusInernal } from './planet-venus-internal'
-export { GeologyVenus } from './geology-venus'
+export { default as PlanetVenus } from './planet-venus.svg'
+export { default as PlanetVenusInernal } from './planet-venus-internal.svg'
+export { default as GeologyVenus } from './geology-venus.png'

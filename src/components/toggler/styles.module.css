@@ -1,3 +1,62 @@
-.cta div:focus-visible {
-  box-shadow: var(--bs-1);
+.cta {
+  font-size: 2rem;
+  display: flex;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(7, 7, 36, 0.3);
+  backdrop-filter: blur(1rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--p1);
+}
+
+.close {
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--clr-dark-2);
+  display: flex;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+.item {
+  border-bottom: 1px solid var(--clr-dark-2);
+  font-family: var(--ff-serif-2);
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.item:last-of-type {
+  border-bottom: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--p1);
+}
+
+.text {
+  display: flex;
+  gap: 2rem;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.chevron {
+  color: var(--clr-dark-2);
 }
