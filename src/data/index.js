@@ -26,6 +26,89 @@ import {
 } from '../assets'
 
 export const planets = [
+  // Mercury
+  {
+    name: 'mercury',
+    color: '#419EBB',
+    pathname: '/mercury',
+    overview: {
+      info: " Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
+      sourceUrl: 'https://en.wikipedia.org/wiki/Mercury_(planet)',
+      svg: PlanetMercury,
+    },
+    structure: {
+      info: "Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.",
+      sourceUrl:
+        'https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure',
+      svg: PlanetMercuryInernal,
+    },
+    geology: {
+      info: "Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.",
+      sourceUrl:
+        'https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology',
+      svg: PlanetMercuryInernal,
+      png: GeologyMercury,
+    },
+    details: [
+      {
+        title: 'rotation time',
+        info: '58.6 Days',
+      },
+      {
+        title: 'revolution time',
+        info: '87.97 Days',
+      },
+      {
+        title: 'radius',
+        info: '2,439.7 KM',
+      },
+      {
+        title: 'average temp.',
+        info: '430°c',
+      },
+    ],
+  },
+  // Venus
+  {
+    name: 'venus',
+    color: '#EDA249',
+    pathname: '/venus',
+    overview: {
+      info: "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
+      sourceUrl: 'https://en.wikipedia.org/wiki/Venus',
+      svg: PlanetVenus,
+    },
+    structure: {
+      info: '  The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.',
+      sourceUrl: 'https://en.wikipedia.org/wiki/Venus#Internal_structure',
+      svg: PlanetVenusInernal,
+    },
+    geology: {
+      info: 'Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.',
+      sourceUrl: 'https://en.wikipedia.org/wiki/Venus#Surface_geology',
+      svg: PlanetVenusInernal,
+      png: GeologyVenus,
+    },
+    details: [
+      {
+        title: 'rotation time',
+        info: '243 Days',
+      },
+      {
+        title: 'revolution time',
+        info: '224.7 Days',
+      },
+      {
+        title: 'radius',
+        info: '6,051.8 KM',
+      },
+      {
+        title: 'average temp.',
+        info: '471°c',
+      },
+    ],
+  },
+
   // Earth
   {
     name: 'earth',
@@ -66,45 +149,43 @@ export const planets = [
       },
     ],
   },
-  // Mercury
+  // Mars
   {
-    name: 'mercury',
-    color: '#419EBB',
-    pathname: '/mercury',
+    name: 'mars',
+    color: '#D14C32',
+    pathname: '/mars',
     overview: {
-      info: " Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
-      sourceUrl: 'https://en.wikipedia.org/wiki/Mercury_(planet)',
-      svg: PlanetMercury,
+      info: 'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".',
+      sourceUrl: 'https://en.wikipedia.org/wiki/Mars',
+      svg: PlanetMars,
     },
     structure: {
-      info: "Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.",
-      sourceUrl:
-        'https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure',
-      svg: PlanetMercuryInernal,
+      info: 'Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.',
+      sourceUrl: 'https://en.wikipedia.org/wiki/Mars#Internal_structure',
+      svg: PlanetMarsInernal,
     },
     geology: {
-      info: "Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.",
-      sourceUrl:
-        'https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology',
-      svg: PlanetMercuryInernal,
-      png: GeologyMercury,
+      info: 'Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.',
+      sourceUrl: 'https://en.wikipedia.org/wiki/Mars#Surface_geology',
+      svg: PlanetMarsInernal,
+      png: GeologyMars,
     },
     details: [
       {
         title: 'rotation time',
-        info: '58.6 Days',
+        info: '1.03 Days',
       },
       {
         title: 'revolution time',
-        info: '87.97 Days',
+        info: '1.88 Years',
       },
       {
         title: 'radius',
-        info: '2,439.7 KM',
+        info: '3,389.5 KM',
       },
       {
         title: 'average temp.',
-        info: '430°c',
+        info: '-28°c',
       },
     ],
   },
@@ -149,86 +230,7 @@ export const planets = [
       },
     ],
   },
-  // Mars
-  {
-    name: 'mars',
-    color: '#D14C32',
-    pathname: '/mars',
-    overview: {
-      info: 'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".',
-      sourceUrl: 'https://en.wikipedia.org/wiki/Mars',
-      svg: PlanetMars,
-    },
-    structure: {
-      info: 'Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense materials. Scientists initially determined that the core is at least partially liquid. Current models of its interior imply a core consisting primarily of iron and nickel with about 16–17% sulfur.',
-      sourceUrl: 'https://en.wikipedia.org/wiki/Mars#Internal_structure',
-      svg: PlanetMarsInernal,
-    },
-    geology: {
-      info: 'Mars is a terrestrial planet whose surface consists of minerals containing silicon and oxygen, metals, and other elements that typically make up rock. The surface is primarily composed of tholeiitic basalt, although parts are more silica-rich than typical basalt.',
-      sourceUrl: 'https://en.wikipedia.org/wiki/Mars#Surface_geology',
-      svg: PlanetMarsInernal,
-      png: GeologyMars,
-    },
-    details: [
-      {
-        title: 'rotation time',
-        info: '1.03 Days',
-      },
-      {
-        title: 'revolution time',
-        info: '1.88 Years',
-      },
-      {
-        title: 'radius',
-        info: '3,389.5 KM',
-      },
-      {
-        title: 'average temp.',
-        info: '-28°c',
-      },
-    ],
-  },
-  // Neptune
-  {
-    name: 'neptune',
-    color: '#2D68F0',
-    pathname: '/neptune',
-    overview: {
-      info: 'Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.',
-      sourceUrl: 'https://en.wikipedia.org/wiki/Neptune',
-      svg: PlanetNeptune,
-    },
-    structure: {
-      info: "Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.",
-      sourceUrl: 'https://en.wikipedia.org/wiki/Neptune#Internal_structure',
-      svg: PlanetNeptuneInernal,
-    },
-    geology: {
-      info: "Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.",
-      sourceUrl: 'https://en.wikipedia.org/wiki/Neptune#Atmosphere',
-      svg: PlanetNeptuneInernal,
-      png: GeologyNeptune,
-    },
-    details: [
-      {
-        title: 'rotation time',
-        info: '16.08 Hours',
-      },
-      {
-        title: 'revolution time',
-        info: '164.79 Years',
-      },
-      {
-        title: 'radius',
-        info: '24,622 KM',
-      },
-      {
-        title: 'average temp.',
-        info: '-201°c',
-      },
-    ],
-  },
+
   // Saturn
   {
     name: 'saturn',
@@ -309,43 +311,43 @@ export const planets = [
       },
     ],
   },
-  // Venus
+  // Neptune
   {
-    name: 'venus',
-    color: '#EDA249',
-    pathname: '/venus',
+    name: 'neptune',
+    color: '#2D68F0',
+    pathname: '/neptune',
     overview: {
-      info: "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
-      sourceUrl: 'https://en.wikipedia.org/wiki/Venus',
-      svg: PlanetVenus,
+      info: 'Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.',
+      sourceUrl: 'https://en.wikipedia.org/wiki/Neptune',
+      svg: PlanetNeptune,
     },
     structure: {
-      info: '  The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.',
-      sourceUrl: 'https://en.wikipedia.org/wiki/Venus#Internal_structure',
-      svg: PlanetVenusInernal,
+      info: "Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions.",
+      sourceUrl: 'https://en.wikipedia.org/wiki/Neptune#Internal_structure',
+      svg: PlanetNeptuneInernal,
     },
     geology: {
-      info: 'Much of the Venusian surface appears to have been shaped by volcanic activity. Venus has several times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60 mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.',
-      sourceUrl: 'https://en.wikipedia.org/wiki/Venus#Surface_geology',
-      svg: PlanetVenusInernal,
-      png: GeologyVenus,
+      info: "Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum.",
+      sourceUrl: 'https://en.wikipedia.org/wiki/Neptune#Atmosphere',
+      svg: PlanetNeptuneInernal,
+      png: GeologyNeptune,
     },
     details: [
       {
         title: 'rotation time',
-        info: '243 Days',
+        info: '16.08 Hours',
       },
       {
         title: 'revolution time',
-        info: '224.7 Days',
+        info: '164.79 Years',
       },
       {
         title: 'radius',
-        info: '6,051.8 KM',
+        info: '24,622 KM',
       },
       {
         title: 'average temp.',
-        info: '471°c',
+        info: '-201°c',
       },
     ],
   },

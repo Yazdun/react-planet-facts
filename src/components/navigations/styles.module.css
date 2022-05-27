@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  font-family: var(--ff-serif-2);
+  gap: 1.92rem;
+}
+
+.link {
+  color: var(--clr-light-3);
+  font-size: 0.77rem;
+  text-transform: uppercase;
+  letter-spacing: 0.108rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .list {
+    margin-top: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .list {
+    display: none;
+  }
+}

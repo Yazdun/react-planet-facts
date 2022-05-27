@@ -4,6 +4,7 @@
 :root {
   --clr-light-1: #ffffff;
   --clr-light-2: #838391;
+  --clr-light-3: #c1c1c8;
   --clr-dark-1: #070724;
   --clr-dark-2: #38384f;
 
@@ -36,10 +37,8 @@ body {
 }
 
 a {
-  text-decoration-skip-ink: auto;
-  text-decoration: none;
-  outline: none;
-  color: var(--clr-white-1);
+  all: unset;
+  cursor: pointer;
 }
 
 img,
