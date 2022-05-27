@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-  --clr-white-1: #ffffff;
+  --clr-light-1: #ffffff;
   --clr-light-2: #838391;
   --clr-dark-1: #070724;
   --clr-dark-2: #38384f;
+
+  --bs-1: var(--clr-light-1) 0px 0px 0px 1px;
+
   --ff-serif-1: 'Antonio', sans-serif;
   --ff-serif-2: 'League Spartan', sans-serif;
 }
@@ -19,7 +22,7 @@
 }
 
 body {
-  color: var(--clr-white-1);
+  color: var(--clr-light-1);
   background-color: var(--clr-dark-1);
   font-family: var(--ff-serif-1);
   background-image: url('./assets/background-stars.svg');
@@ -41,7 +44,23 @@ picture {
 button {
   background-color: transparent;
   border: none;
+  outline: none;
   cursor: pointer;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* focus visible */
+button:focus-visible,
+a:focus-visible {
+  box-shadow: white 0px 0px 0px 2px !important;
 }
 
 /* only for screen readers */

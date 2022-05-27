@@ -1,11 +1,12 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid var(--clr-dark-2);
-  padding-block: 1rem;
-  padding-inline: 1.5rem;
+  padding: 1rem;
 }
 
 .logo {
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
