@@ -8,7 +8,7 @@ export const framer_menu = {
   exit: {
     opacity: 0,
   },
-  transition: { duration: 0.4 },
+  transition: { duration: 0.2 },
 }
 
 export const framer_circle = delay => {
@@ -19,7 +19,7 @@ export const framer_circle = delay => {
       type: 'spring',
       stiffness: 260,
       damping: 20,
-      delay: 0.4 + delay / 10,
+      delay: 0.2 + delay / 10,
     },
   }
 }
@@ -28,6 +28,6 @@ export const framer_name = {
   initial: { x: '-80%', opacity: 0 },
   animate: { x: 0, opacity: 1 },
   transition: {
-    delay: 0.4,
+    delay: 0.2,
   },
 }

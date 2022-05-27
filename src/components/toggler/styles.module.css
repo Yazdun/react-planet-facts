@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   padding: var(--p1);
+  overflow-y: scroll;
 }
 
 .close {
