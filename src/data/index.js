@@ -28,7 +28,7 @@ import {
 export const planets = [
   // Earth
   {
-    name: 'Earth',
+    name: 'earth',
     color: '#6D2ED5',
     pathname: '/earth',
     overview: {
@@ -68,7 +68,7 @@ export const planets = [
   },
   // Mercury
   {
-    name: 'Mercury',
+    name: 'mercury',
     color: '#419EBB',
     pathname: '/mercury',
     overview: {
@@ -110,7 +110,7 @@ export const planets = [
   },
   // Jupiter
   {
-    name: 'Jupiter',
+    name: 'jupiter',
     color: '#D83A34',
     pathname: '/jupiter',
     overview: {
@@ -151,7 +151,7 @@ export const planets = [
   },
   // Mars
   {
-    name: 'Mars',
+    name: 'mars',
     color: '#D14C32',
     pathname: '/mars',
     overview: {
@@ -191,7 +191,7 @@ export const planets = [
   },
   // Neptune
   {
-    name: 'Neptune',
+    name: 'neptune',
     color: '#2D68F0',
     pathname: '/neptune',
     overview: {
@@ -231,7 +231,7 @@ export const planets = [
   },
   // Saturn
   {
-    name: 'Saturn',
+    name: 'saturn',
     color: '#CD5120',
     pathname: '/saturn',
     overview: {
@@ -271,7 +271,7 @@ export const planets = [
   },
   // Uranus
   {
-    name: 'Uranus',
+    name: 'uranus',
     color: '#1EC1A2',
     pathname: '/uranus',
     overview: {
@@ -311,7 +311,7 @@ export const planets = [
   },
   // Venus
   {
-    name: 'Venus',
+    name: 'venus',
     color: '#EDA249',
     pathname: '/venus',
     overview: {

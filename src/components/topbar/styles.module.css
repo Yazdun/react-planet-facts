@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--clr-dark-2);
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+}
+
+.logo {
+  text-transform: uppercase;
+}

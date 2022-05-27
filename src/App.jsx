@@ -1,8 +1,11 @@
+import { BrowserRouter } from 'react-router-dom'
+import { AppRoutes } from './pages'
+
 function App() {
   return (
-    <div>
-      <h1>DONEG JUSTO EGET</h1>
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   )
 }
 
