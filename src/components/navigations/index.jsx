@@ -6,6 +6,7 @@ import { usePlanet } from '../../hooks'
 
 export const Navigations = () => {
   const currentPlanet = usePlanet()
+  const activeLinkAriaLabel = name => `${name} is the current page`
 
   return (
     <ul className={css.list}>
@@ -22,6 +23,7 @@ export const Navigations = () => {
             <Link
               className={cn(css.link, isActive && css.active)}
               to={pathname}
+              aria-label={activeLinkAriaLabel(name)}
             >
               {name}
             </Link>
