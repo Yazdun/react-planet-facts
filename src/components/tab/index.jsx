@@ -1,6 +1,7 @@
 import css from './styles.module.css'
 import { motion } from 'framer-motion'
-import { framer_opacity } from './framer'
+import { framer_img, framer_opacity } from './framer'
+import { DesktopTabs } from '../desktopTabs'
 
 export const Tab = ({ data, title = 'Planet' }) => {
   const { info, sourceUrl, svg, png } = data
@@ -8,6 +9,14 @@ export const Tab = ({ data, title = 'Planet' }) => {
     <motion.div className={css.container}>
       <motion.div className={css.image} {...framer_opacity}>
         <img src={svg} alt={title} />
+        {png && (
+          <motion.img
+            src={png}
+            className={css.geology}
+            alt={`{name}'s geology`}
+            {...framer_img}
+          />
+        )}
       </motion.div>
       <div className={css.info}>
         <div className={css.text}>
@@ -17,6 +26,7 @@ export const Tab = ({ data, title = 'Planet' }) => {
           </motion.p>
         </div>
       </div>
+      <DesktopTabs />
     </motion.div>
   )
 }

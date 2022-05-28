@@ -11,6 +11,16 @@
   width: 100%;
   max-width: 11rem;
   min-height: 11rem;
+  position: relative;
+}
+
+.geology {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 5rem;
+  bottom: -2rem;
 }
 
 .text {
@@ -24,5 +34,4 @@
 
 .desc {
   line-height: 1.563rem;
-  /* font-size: 14px; */
 }
