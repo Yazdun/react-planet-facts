@@ -1,10 +1,19 @@
-import { Navigate, Route, Routes, useParams } from 'react-router-dom'
+import {
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useParams,
+} from 'react-router-dom'
 import { planets } from '../../data'
 import { MobileTabs, Tab } from '../../components'
+import { AnimatePresence } from 'framer-motion'
 
 export const Planet = () => {
   const { id: planetName } = useParams()
   const planet = planets.find(item => item.name === planetName)
+  const location = useLocation()
+
   const { name, color, overview, structure, geology, details } = planet
 
   if (!planet) {
@@ -14,15 +23,20 @@ export const Planet = () => {
   return (
     <div>
       <MobileTabs planet={planet.name} color={planet.color} />
-      <Routes>
-        <Route path="overview" element={<Tab data={overview} title={name} />} />
-        <Route
-          path="structure"
-          element={<Tab data={structure} title={name} />}
-        />
-        <Route path="geology" element={<Tab data={geology} title={name} />} />
-        <Route path="*" element={<Navigate replace to="overview" />} />
-      </Routes>
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
+          <Route
+            path="overview"
+            element={<Tab data={overview} title={name} key="dfsf" />}
+          />
+          <Route
+            path="structure"
+            element={<Tab data={structure} title={name} key="dsfjl" />}
+          />
+          <Route path="geology" element={<Tab data={geology} title={name} />} />
+          <Route path="*" element={<Navigate replace to="overview" />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   )
 }

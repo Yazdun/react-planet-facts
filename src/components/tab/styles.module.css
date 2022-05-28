@@ -1,0 +1,28 @@
+.container {
+  padding: var(--p1);
+  width: 100%;
+  max-width: 64rem;
+  margin: auto;
+  font-family: var(--ff-serif-2);
+}
+
+.image {
+  margin: 3.875rem auto;
+  width: 100%;
+  max-width: 11rem;
+  min-height: 11rem;
+}
+
+.text {
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 1.688rem;
+}
+
+.desc {
+  line-height: 1.563rem;
+  /* font-size: 14px; */
+}
