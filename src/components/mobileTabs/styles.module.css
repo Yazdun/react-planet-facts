@@ -23,4 +23,13 @@
   justify-content: space-between;
   font-family: var(--ff-serif-2);
   text-transform: uppercase;
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    display: none;
+  }
 }
