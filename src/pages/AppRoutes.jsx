@@ -9,8 +9,8 @@ export const AppRoutes = () => {
     <AnimatePresence exitBeforeEnter initial={false}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Navigate replace to="/earth" />} />
-          <Route path="/:id" element={<Planet />} />
+          <Route index element={<Navigate replace to="/earth/overview" />} />
+          <Route path=":id/*" element={<Planet />} />
         </Route>
       </Routes>
     </AnimatePresence>

@@ -5,17 +5,17 @@ import css from './styles.module.css'
 import { usePlanet } from '../../hooks'
 
 export const Navigations = () => {
-  const currentPlanet = usePlanet()
+  const { currentPlanet } = usePlanet()
   const activeLinkAriaLabel = name => `${name} is the current page`
 
   return (
     <ul className={css.list}>
       {planets.map(planet => {
         const { name, pathname, color } = planet
-        const isActive = currentPlanet === pathname
+        const isActive = currentPlanet === name
 
         return (
-          <li className={cn(isActive && css.active, css.item)}>
+          <li className={cn(isActive && css.active, css.item)} key={name}>
             <span
               className={css.line}
               style={{ backgroundColor: color }}

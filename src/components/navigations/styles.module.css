@@ -27,7 +27,8 @@
 
   .line {
     position: absolute;
-    width: 0;
+    width: 100%;
+    transform: scaleX(0);
     height: 0.35rem;
     top: -2.3rem;
     right: 0;
@@ -38,7 +39,7 @@
   .item:hover .line {
     left: 0;
     right: auto;
-    width: 100%;
+    transform: scaleX(1);
   }
 
   .link {

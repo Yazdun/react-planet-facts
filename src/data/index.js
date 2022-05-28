@@ -30,7 +30,7 @@ export const planets = [
   {
     name: 'mercury',
     color: '#419EBB',
-    pathname: '/mercury',
+    pathname: '/mercury/overview',
     overview: {
       info: " Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
       sourceUrl: 'https://en.wikipedia.org/wiki/Mercury_(planet)',
@@ -72,7 +72,7 @@ export const planets = [
   {
     name: 'venus',
     color: '#EDA249',
-    pathname: '/venus',
+    pathname: '/venus/overview',
     overview: {
       info: "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
       sourceUrl: 'https://en.wikipedia.org/wiki/Venus',
@@ -113,7 +113,7 @@ export const planets = [
   {
     name: 'earth',
     color: '#6D2ED5',
-    pathname: '/earth',
+    pathname: '/earth/overview',
     overview: {
       info: "Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.",
       sourceUrl: 'https://en.wikipedia.org/wiki/Earth',
@@ -153,7 +153,7 @@ export const planets = [
   {
     name: 'mars',
     color: '#D14C32',
-    pathname: '/mars',
+    pathname: '/mars/overview',
     overview: {
       info: 'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".',
       sourceUrl: 'https://en.wikipedia.org/wiki/Mars',
@@ -193,7 +193,7 @@ export const planets = [
   {
     name: 'jupiter',
     color: '#D83A34',
-    pathname: '/jupiter',
+    pathname: '/jupiter/overview',
     overview: {
       info: 'Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.',
       sourceUrl: 'https://en.wikipedia.org/wiki/Jupiter',
@@ -235,7 +235,7 @@ export const planets = [
   {
     name: 'saturn',
     color: '#CD5120',
-    pathname: '/saturn',
+    pathname: '/saturn/overview',
     overview: {
       info: 'Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.',
       sourceUrl: 'https://en.wikipedia.org/wiki/Saturn',
@@ -275,7 +275,7 @@ export const planets = [
   {
     name: 'uranus',
     color: '#1EC1A2',
-    pathname: '/uranus',
+    pathname: '/uranus/overview',
     overview: {
       info: 'Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.',
       sourceUrl: 'https://en.wikipedia.org/wiki/Uranus',
@@ -315,7 +315,7 @@ export const planets = [
   {
     name: 'neptune',
     color: '#2D68F0',
-    pathname: '/neptune',
+    pathname: '/neptune/overview',
     overview: {
       info: 'Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.',
       sourceUrl: 'https://en.wikipedia.org/wiki/Neptune',

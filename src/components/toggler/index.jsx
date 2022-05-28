@@ -16,7 +16,7 @@ import { usePlanet } from '../../hooks'
 
 export const Toggler = () => {
   const [open, setOpen] = useState(false)
-  const currentPlanet = usePlanet()
+  const { currentPlanet } = usePlanet()
 
   const openMenuAriaLabel = open
     ? 'hamburger menu is opened'
@@ -51,7 +51,7 @@ export const Toggler = () => {
             <ul className={css.list}>
               {planets.map((planet, idx) => {
                 const { name, pathname, color } = planet
-                const isActive = currentPlanet === pathname
+                const isActive = currentPlanet === name
                 return (
                   <li key={name} className={css.item}>
                     <Link

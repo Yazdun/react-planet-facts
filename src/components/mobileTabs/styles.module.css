@@ -4,6 +4,18 @@
   border-bottom: 1px solid var(--clr-dark-2);
 }
 
+.progress {
+  position: absolute;
+  height: 0.2rem;
+  width: 100%;
+  bottom: -1rem;
+  border-radius: 50rem;
+}
+
+.item {
+  position: relative;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
