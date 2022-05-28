@@ -1,7 +1,6 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import css from './styles.module.css'
-import { AnimatePresence, motion } from 'framer-motion'
-import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { usePlanet } from '../../hooks'
 
 export const MobileTabs = ({ planet = 'earth', color = '#6D2ED5' }) => {
