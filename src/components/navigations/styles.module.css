@@ -11,9 +11,42 @@
   letter-spacing: 0.108rem;
 }
 
+.active {
+  color: var(--clr-light-1);
+  pointer-events: none;
+}
+
 @media only screen and (min-width: 992px) {
   .list {
     margin-top: 0.3rem;
+  }
+
+  .item {
+    position: relative;
+  }
+
+  .line {
+    position: absolute;
+    width: 0;
+    height: 0.35rem;
+    top: -2.3rem;
+    right: 0;
+    transition: 0.3s;
+    border-radius: 0.08rem;
+  }
+
+  .item:hover .line {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+  .link {
+    transition: 0.5s color;
+  }
+
+  .link:hover {
+    color: var(--clr-light-1);
   }
 }
 

@@ -5,10 +5,19 @@ import { useState } from 'react'
 import { planets } from '../../data'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { framer_circle, framer_menu, framer_name } from './framer'
+import {
+  framer_button,
+  framer_circle,
+  framer_menu,
+  framer_name,
+} from './framer'
+import cn from 'classnames'
+import { usePlanet } from '../../hooks'
 
 export const Toggler = () => {
   const [open, setOpen] = useState(false)
+  const currentPlanet = usePlanet()
+
   return (
     <>
       <button className={css.cta} onClick={() => setOpen(true)}>
@@ -17,9 +26,13 @@ export const Toggler = () => {
       <AnimatePresence>
         {open && (
           <motion.div {...framer_menu} className={css.menu}>
-            <button onClick={() => setOpen(false)} className={css.close}>
+            <motion.button
+              onClick={() => setOpen(false)}
+              className={css.close}
+              {...framer_button}
+            >
               <VscChromeClose />
-            </button>
+            </motion.button>
             <ul className={css.list}>
               {planets.map((planet, idx) => {
                 const { name, pathname, color } = planet
@@ -39,7 +52,12 @@ export const Toggler = () => {
                         <motion.span {...framer_name}>{name}</motion.span>
                       </span>
 
-                      <MdNavigateNext className={css.chevron} />
+                      <MdNavigateNext
+                        className={cn(
+                          css.chevron,
+                          currentPlanet === pathname && css.active,
+                        )}
+                      />
                     </Link>
                   </li>
                 )
