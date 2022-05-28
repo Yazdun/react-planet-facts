@@ -1,0 +1,14 @@
+.nav {
+  padding: var(--p1);
+  border-bottom: var(--clr);
+  border-bottom: 1px solid var(--clr-dark-2);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  font-family: var(--ff-serif-2);
+  text-transform: uppercase;
+}
