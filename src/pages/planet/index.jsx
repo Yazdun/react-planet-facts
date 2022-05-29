@@ -6,7 +6,7 @@ import {
   useParams,
 } from 'react-router-dom'
 import { planets } from '../../data'
-import { MobileTabs, Tab } from '../../components'
+import { Details, MobileTabs, Tab } from '../../components'
 import { AnimatePresence } from 'framer-motion'
 
 export const Planet = () => {
@@ -22,7 +22,7 @@ export const Planet = () => {
 
   return (
     <div>
-      <MobileTabs planet={planet.name} color={planet.color} />
+      <MobileTabs planet={name} color={color} />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
           <Route
@@ -37,6 +37,7 @@ export const Planet = () => {
           <Route path="*" element={<Navigate replace to="overview" />} />
         </Routes>
       </AnimatePresence>
+      <Details data={details} />
     </div>
   )
 }

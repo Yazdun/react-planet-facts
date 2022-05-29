@@ -29,11 +29,13 @@
 
 .title {
   text-transform: uppercase;
+  font-family: var(--ff-serif-1);
 }
 
 .desc {
   line-height: 1.563rem;
   margin: 1.688rem 0;
+  color: var(--clr-light-3);
 }
 
 .source {
@@ -85,14 +87,19 @@
   .title {
     font-size: 3rem;
   }
+
+  .geology {
+    max-width: 7rem;
+    bottom: -3rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 13.625rem;
+    justify-content: space-between;
+    gap: 9rem;
     margin-top: 5rem;
   }
 
@@ -107,17 +114,23 @@
   }
 
   .image {
-    width: 100%;
-    height: 100%;
+    max-width: 28.125rem;
     margin: 0;
   }
 
   .planet {
     width: 28.125rem;
+    height: 28.125rem;
+    /* min-height: auto; */
     object-fit: cover;
   }
 
   .desc {
     margin: 2.063rem 0;
+  }
+
+  .geology {
+    max-width: 10.188rem;
+    bottom: -5rem;
   }
 }

@@ -4,7 +4,7 @@ import { framer_img, framer_opacity } from './framer'
 import { DesktopTabs } from '../desktopTabs'
 import { BsFillArrowUpRightSquareFill } from 'react-icons/bs'
 
-export const Tab = ({ data, title = 'Planet' }) => {
+export const Tab = ({ data, title = 'earth' }) => {
   const { info, sourceUrl, svg, png } = data
   return (
     <motion.div className={css.container}>
@@ -33,7 +33,7 @@ export const Tab = ({ data, title = 'Planet' }) => {
             <BsFillArrowUpRightSquareFill />
           </p>
         </div>
-        <DesktopTabs />
+        <DesktopTabs planet={title} />
       </div>
     </motion.div>
   )
