@@ -5,6 +5,10 @@ import { usePlanet } from '../../hooks'
 import { pathnames } from './data'
 
 export const MobileTabs = ({ planet = 'earth', color = '#6D2ED5' }) => {
+  const { currentTab } = usePlanet()
+  const activeLinkAriaLabel = name =>
+    name === currentTab ? `${name} is the current tab` : name
+
   return (
     <nav className={css.nav}>
       <ul className={css.list}>
@@ -12,7 +16,12 @@ export const MobileTabs = ({ planet = 'earth', color = '#6D2ED5' }) => {
           const { path } = item
           return (
             <li className={css.item} key={path}>
-              <Link to={`/${planet}/${path}`}>{path}</Link>
+              <Link
+                to={`/${planet}/${path}`}
+                aria-label={activeLinkAriaLabel(path)}
+              >
+                {path}
+              </Link>
               <Underline path={path} color={color} />
             </li>
           )
