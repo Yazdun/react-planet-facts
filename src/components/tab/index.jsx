@@ -9,7 +9,7 @@ export const Tab = ({ data, title = 'Planet' }) => {
   return (
     <motion.div className={css.container}>
       <motion.div className={css.image} {...framer_opacity}>
-        <img src={svg} alt={title} />
+        <img src={svg} alt={title} className={css.planet} />
         {png && (
           <motion.img
             src={png}

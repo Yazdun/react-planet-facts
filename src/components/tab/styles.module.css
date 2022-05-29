@@ -86,3 +86,38 @@
     font-size: 3rem;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13.625rem;
+    margin-top: 5rem;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .planet {
+    width: 28.125rem;
+    object-fit: cover;
+  }
+
+  .desc {
+    margin: 2.063rem 0;
+  }
+}
