@@ -5,6 +5,8 @@
   border: 1px solid var(--clr-dark-3);
   text-transform: uppercase;
   max-width: 100%;
+  letter-spacing: 0.161rem;
+  font-weight: 600;
 }
 
 .item:nth-of-type(1) .number {

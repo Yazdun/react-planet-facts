@@ -30,6 +30,7 @@
 .title {
   text-transform: uppercase;
   font-family: var(--ff-serif-1);
+  font-size: 2.5rem;
 }
 
 .desc {
@@ -48,6 +49,7 @@
 
 .source a {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .source span {
@@ -85,7 +87,7 @@
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   .geology {
@@ -100,7 +102,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 9rem;
-    margin-top: 5rem;
+    margin-top: 9.25rem;
+  }
+
+  .info {
+    gap: 2.75rem;
   }
 
   .text {
@@ -121,7 +127,6 @@
   .planet {
     width: 28.125rem;
     height: 28.125rem;
-    /* min-height: auto; */
     object-fit: cover;
   }
 
