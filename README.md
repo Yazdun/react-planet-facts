@@ -15,7 +15,7 @@
     <a href="https://www.frontendmentor.io/solutions/planet-facts-react-and-framer-motion-xsXBSXvf5t"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
-    <a href="https://femplanet.vercel.app/earth/overview">View Demo</a>
+    <a href="https://femplanets.vercel.app/earth/overview">View Demo</a>
     ·
     <a href="https://github.com/Yazdun/react-planet-facts/issues">Report Bug</a>
     ·
