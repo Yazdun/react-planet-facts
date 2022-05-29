@@ -1,5 +1,5 @@
 .container {
-  padding: var(--p1);
+  padding-inline: var(--p1);
   width: 100%;
   max-width: 69.5rem;
   margin: auto;
@@ -78,6 +78,10 @@
     min-height: 23.063rem;
   }
 
+  .planet {
+    width: 100%;
+  }
+
   .source {
     justify-content: flex-start;
   }
@@ -106,6 +110,12 @@
 
   .info {
     gap: 2.75rem;
+    width: 100%;
+    max-width: 21.875rem;
+  }
+
+  .desc {
+    font-size: 1.12rem;
   }
 
   .text {

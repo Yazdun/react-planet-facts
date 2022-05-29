@@ -8,6 +8,7 @@ import {
 import { planets } from '../../data'
 import { Details, MobileTabs, Tab } from '../../components'
 import { AnimatePresence } from 'framer-motion'
+import css from './styles.module.css'
 
 export const Planet = () => {
   const { id: planetName } = useParams()
@@ -21,7 +22,7 @@ export const Planet = () => {
   }
 
   return (
-    <div>
+    <div className={css.wrapper}>
       <MobileTabs planet={name} color={color} />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>

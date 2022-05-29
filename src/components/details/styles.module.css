@@ -1,12 +1,11 @@
 .list {
-  padding: var(--p1);
+  padding-inline: var(--p1);
   width: 100%;
   max-width: 69.5rem;
   margin: auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 0.625rem;
-  margin: 5.5rem auto;
+  margin: auto;
 }
 
 .item {
@@ -33,7 +32,7 @@
 
 @media only screen and (min-width: 768px) {
   .list {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.813rem;
   }
 
@@ -48,4 +47,8 @@
   }
 }
 
-/* margin-bottom: 3.875rem; */
+@media only screen and (min-width: 992px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
