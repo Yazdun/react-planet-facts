@@ -11,6 +11,10 @@ export const AppRoutes = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate replace to="/earth/overview" />} />
           <Route path=":id/*" element={<Planet />} />
+          <Route
+            path=":id"
+            element={<Navigate replace to="/earth/overview" />}
+          />
         </Route>
       </Routes>
     </AnimatePresence>
