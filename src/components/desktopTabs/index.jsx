@@ -7,7 +7,6 @@ import cn from 'classnames'
 
 export const DesktopTabs = ({ planet = 'earth' }) => {
   const { currentPlanet, currentTab } = usePlanet()
-
   const color = planets.find(item => item.name === currentPlanet)?.color
 
   return (
@@ -16,7 +15,7 @@ export const DesktopTabs = ({ planet = 'earth' }) => {
         const { path, number } = item
         const isActive = currentTab === path
         return (
-          <li className={css.item}>
+          <li className={css.item} key={path}>
             <Link
               className={cn(css.pathname, isActive && css.disable)}
               to={`/${planet}/${path}`}
