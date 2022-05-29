@@ -12,7 +12,7 @@
   <p align="center">
     Fact site for all planets in our solar system
     <br />
-    <a href="#"><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/planet-facts-react-and-framer-motion-xsXBSXvf5t"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://femplanet.vercel.app/earth/overview">View Demo</a>
@@ -22,7 +22,7 @@
     <a href="https://github.com/Yazdun/react-planet-facts/issues">Request Feature</a>
   </p>
 
-[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=vercel&logo=vercel&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Ffemplanet.vercel.app/earth/overview/%2F)](LIVE)
+[![Website](https://img.shields.io/website?down_color=critical&down_message=down&label=vercel&logo=vercel&style=for-the-badge&up_color=brightengreen&up_message=active&url=https%3A%2F%2Ffemplanets.vercel.app/earth/overview/%2F)](LIVE)
 ![Website](https://img.shields.io/website?down_color=orange&down_message=INTERMEDIATE&label=difficulty&logo=frontendmentor&style=for-the-badge&up_color=orange&up_message=INTERMEDIATE&url=https%3A%2F%2Fwww.frontendmentor.io%2F)
 
 </div>
