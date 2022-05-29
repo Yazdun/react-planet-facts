@@ -111,7 +111,7 @@
   }
 
   .info {
-    gap: 2.5rem;
+    gap: 3rem;
     width: 100%;
     max-width: 21rem;
     flex-direction: column;
