@@ -113,7 +113,6 @@
   .info {
     gap: 2rem;
     width: 100%;
-    /* max-width: 21.875rem; */
     max-width: 21rem;
     flex-direction: column;
     align-items: flex-start;
@@ -127,6 +126,7 @@
     max-width: 28.125rem;
     margin: 0;
     margin-left: 5.5rem;
+    margin-top: 0.625rem;
   }
 
   .planet {

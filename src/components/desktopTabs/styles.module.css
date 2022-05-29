@@ -1,13 +1,13 @@
 .pathname {
   display: flex;
-  gap: 1rem;
+  gap: 1.3rem;
   padding: 1.25rem;
   border: 1px solid var(--clr-dark-3);
   text-transform: uppercase;
   max-width: 100%;
   letter-spacing: 0.161rem;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.83rem;
   transition: 0.5s background;
   position: relative;
   overflow: hidden;
