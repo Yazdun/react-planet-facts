@@ -31,7 +31,7 @@
   text-transform: uppercase;
   font-family: var(--ff-serif-1);
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .desc {
@@ -41,7 +41,7 @@
 }
 
 .source {
-  color: var(--clr-light-1);
+  color: var(--clr-light-2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +88,7 @@
   }
 
   .desc {
-    margin: 2.188rem 0;
+    margin: 2rem 0;
   }
 
   .title {
@@ -107,17 +107,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 9rem;
-    margin-top: 8.313rem;
+    margin-top: 8rem;
   }
 
   .info {
-    gap: 2.75rem;
+    gap: 2rem;
     width: 100%;
     max-width: 21.875rem;
-  }
-
-  .desc {
-    font-size: 1.12rem;
   }
 
   .text {
@@ -143,7 +139,8 @@
   }
 
   .desc {
-    margin: 2.063rem 0;
+    font-size: 1.12rem;
+    margin: 2rem 0;
   }
 
   .geology {
