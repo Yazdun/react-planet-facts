@@ -2,23 +2,21 @@ import { Link } from 'react-router-dom'
 import css from './styles.module.css'
 import { motion } from 'framer-motion'
 import { usePlanet } from '../../hooks'
+import { pathnames } from './data'
 
 export const MobileTabs = ({ planet = 'earth', color = '#6D2ED5' }) => {
   return (
     <nav className={css.nav}>
       <ul className={css.list}>
-        <li className={css.item}>
-          <Link to={`/${planet}/overview`}>overview</Link>
-          <Underline path="overview" color={color} />
-        </li>
-        <li className={css.item}>
-          <Link to={`/${planet}/structure`}>structure</Link>
-          <Underline path="structure" color={color} />
-        </li>
-        <li className={css.item}>
-          <Link to={`/${planet}/geology`}>geology</Link>
-          <Underline path="geology" color={color} />
-        </li>
+        {pathnames.map(item => {
+          const { path } = item
+          return (
+            <li className={css.item} key={path}>
+              <Link to={`/${planet}/${path}`}>{path}</Link>
+              <Underline path={path} color={color} />
+            </li>
+          )
+        })}
       </ul>
     </nav>
   )

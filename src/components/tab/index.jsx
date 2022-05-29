@@ -2,6 +2,7 @@ import css from './styles.module.css'
 import { motion } from 'framer-motion'
 import { framer_img, framer_opacity } from './framer'
 import { DesktopTabs } from '../desktopTabs'
+import { BsFillArrowUpRightSquareFill } from 'react-icons/bs'
 
 export const Tab = ({ data, title = 'Planet' }) => {
   const { info, sourceUrl, svg, png } = data
@@ -24,9 +25,16 @@ export const Tab = ({ data, title = 'Planet' }) => {
           <motion.p {...framer_opacity} className={css.desc}>
             {info}
           </motion.p>
+          <p className={css.source}>
+            <span>Source :</span>
+            <a href={sourceUrl} target="_blank" rel="noreferrer">
+              Wikipedia
+            </a>
+            <BsFillArrowUpRightSquareFill />
+          </p>
         </div>
+        <DesktopTabs />
       </div>
-      <DesktopTabs />
     </motion.div>
   )
 }

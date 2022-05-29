@@ -1,18 +1,21 @@
 import { Link } from 'react-router-dom'
+import { pathnames } from './data'
 import css from './styles.module.css'
 
-export const DesktopTabs = () => {
+export const DesktopTabs = ({ planet = 'earth', color = '#6D2ED5' }) => {
   return (
-    <ul>
-      <li>
-        <Link to="/">overview</Link>
-      </li>
-      <li>
-        <Link to="/">structure</Link>
-      </li>
-      <li>
-        <Link to="/">geology</Link>
-      </li>
+    <ul className={css.list}>
+      {pathnames.map(item => {
+        const { path, number } = item
+        return (
+          <li className={css.item}>
+            <Link className={css.pathname} to={`/${planet}/${path}`}>
+              <span className={css.number}>{number}</span>
+              {path}
+            </Link>
+          </li>
+        )
+      })}
     </ul>
   )
 }

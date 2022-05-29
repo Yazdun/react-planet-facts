@@ -29,9 +29,60 @@
 
 .title {
   text-transform: uppercase;
-  margin-bottom: 1.688rem;
 }
 
 .desc {
   line-height: 1.563rem;
+  margin: 1.688rem 0;
+}
+
+.source {
+  color: var(--clr-light-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.source a {
+  text-decoration: underline;
+}
+
+.source span {
+  color: var(--clr-light-2);
+}
+
+.source svg {
+  margin-bottom: 0.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .info {
+    display: flex;
+    gap: 4.313rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .image {
+    max-width: 23.063rem;
+    min-height: 23.063rem;
+  }
+
+  .source {
+    justify-content: flex-start;
+  }
+
+  .desc {
+    margin: 2.188rem 0;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
 }
