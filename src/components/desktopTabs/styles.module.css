@@ -1,7 +1,8 @@
 .pathname {
   display: flex;
   gap: 1.3rem;
-  padding: 1.25rem;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
   border: 1px solid var(--clr-dark-3);
   text-transform: uppercase;
   max-width: 100%;
