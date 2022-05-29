@@ -12,7 +12,7 @@ export const DesktopTabs = ({ planet = 'earth' }) => {
   return (
     <ul className={css.list}>
       {pathnames.map(item => {
-        const { path, number } = item
+        const { path, number, title } = item
         const isActive = currentTab === path
         return (
           <li className={css.item} key={path}>
@@ -22,7 +22,7 @@ export const DesktopTabs = ({ planet = 'earth' }) => {
               style={{ backgroundColor: isActive && color }}
             >
               <span className={css.number}>{number}</span>
-              {path}
+              {title}
             </Link>
           </li>
         )
