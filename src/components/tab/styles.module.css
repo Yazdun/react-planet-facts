@@ -107,7 +107,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 9rem;
-    margin-top: 9.313rem;
+    margin-top: 8.313rem;
   }
 
   .info {
@@ -133,6 +133,7 @@
   .image {
     max-width: 28.125rem;
     margin: 0;
+    margin-left: 5.5rem;
   }
 
   .planet {
